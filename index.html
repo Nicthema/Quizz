@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+    
+    <form id="quiz" name="quiz">
+        <h1>Quizz test</h1>
+    
+        <p>Nombre completo de Deku (colocando la primera letra con mayúscula).
+        </p>
+        <input id="textbox" type="text" name="question1">
+
+        <p>Cuál de estos quirks pertenece a Katsuki Bakugo</p>
+        <input type="radio" id="mc" name="question2" value="Explosion"> <span>Explosion</span> <br>
+        <input type="radio" id="mc" name="question2" value="Erasure"> <span>Erasure</span> <br>
+        <input type="radio" id="mc" name="question2" value="Cremation"> <span>Cremation</span> <br>
+        <input type="radio" id="mc" name="question2" value="Suicide Bomb"> <span>Suicide Bomb</span> <br>
+
+        <p>A qué clase pertenecen los personajes principales de BHA</p>
+        <input type="radio" id="mc" name="question3" value="Clase 1-B"> <span>Clase 1-B</span> <br>
+        <input type="radio" id="mc" name="question3" value="Clase 2-B<"> <span>Clase 2-B</span> <br>
+        <input type="radio" id="mc" name="question3" value="Clase 1-A"> <span>Clase 1-A</span> <br>
+
+        <input id="button" type="button" value="Finalizar" onclick="check();">
+    </form>
+
+    <div id="after_submit">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="pictures">
+    </div>
+    </main>
+</body>
+</html>
